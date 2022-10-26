@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .border{
+            width: 100%;
+            height: 370vh;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid crimson;
+            transition: 0.7s;
+        }
+
+        .border:hover{
+            background-color: wheat;
+        }
+
+        .content{
+            background-image: url(photo-1571130961480-f07e81037c71.jpeg);
+            width: 100%;
+            height: 350vh;
+            position: relative;
+            
+        }
+
+        .header{
+            background-color: rgb(255, 255, 255);
+            opacity: 0.8;
+            text-align: center;
+            width: 80%;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 30px;
+            padding: 50px;
+        }
+
+        .Sommaire{
+            background-color: rgb(255, 255, 255);
+            opacity: 0.8;
+            position: absolute;
+            margin-top: 190px;
+            margin-left: 100px;
+            padding: 50px;
+            width: 80%;
+            height: auto;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .Sommaire ul{
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+
+        .Sommaire ul li ul{
+            padding-left: 40px;
+        }
+
+        .last{
+            background-color: rgb(255, 255, 255);
+            opacity: 0.8;
+            position: absolute;
+            margin-top: 570px;
+            margin-left: 100px;
+            padding: 50px;
+            width: 80%;
+            height: auto;
+        }
+
+        .last .first_par{
+            font-size: 20px;
+            color: rgb(100, 148, 100);
+        }
+
+        .last .first_par span{
+            font-weight: 800;
+        }
+
+        .last h2{
+            font-size: 30px;
+            color: rgb(66, 100, 66);;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .par2{
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .par2 mark{
+            background-color: rgb(73, 143, 73);
+            color: rgb(7, 7, 7);
+            font-weight: bold;
+        }
+
+        .par2 span{
+            font-weight: 800;
+        }
+
+        .dinosaures{
+            width: 100%;
+            height: 100vh;
+        
+        }
+
+        .card_1l1{
+            background-color: gray;
+            width: 31%;
+            height: 230px;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 15px;
+            margin-top: 15px;
+            text-align: center;
+            
+        }
+
+        .card_2l1{
+            background-color: rgb(72, 117, 72);
+            width: 31%;
+            height: 230px;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 15px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .card_1l1 h1{
+            font-size: 20px;
+        }
+
+        .card_1l1 h1 mark{
+            box-sizing: border-box;
+            background-color: green;
+            padding-bottom: 2px;
+        }
+
+        .card_1l1 img{
+            width: 270px;
+        }
+
+        .card_1l1 p{
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .card_2l1 h1{
+            font-size: 20px;
+        }
+
+        .card_2l1 h1 mark{
+            box-sizing: border-box;
+            background-color: green;
+            padding-bottom: 2px;
+        }
+
+        .card_2l1 img{
+            width: 270px;
+        }
+
+        .card_2l1 p{
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .card_1l2{
+            background-color: gray;
+            width: 31%;
+            height: 275px;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 15px;
+            margin-top: 15px;
+            text-align: center;
+            
+        }
+
+        .card_2l2{
+            background-color: rgb(72, 117, 72);
+            width: 31%;
+            height: 275px;
+            float: left;
+            box-sizing: border-box;
+            margin-left: 15px;
+            margin-top: 15px;
+            text-align: center; 
+        }
+
+        .ss{   
+            font-size: 20px;
+        }
+
+        .ss  mark{
+            box-sizing: border-box;
+            background-color: rgb(255, 0, 0);
+            padding-bottom: 2px;
+        }
+
+        .card_2l2 .aa{
+            font-size: 20px;
+        }
+
+        .card_2l2 .aa mark{
+            box-sizing: border-box;
+            background-color: green;
+            padding-bottom: 2px;
+        }
+
+        .card_2l2 img{
+            width: 270px;
+        }
+
+        .card_2l2 p{
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .card_1l2 .aa{
+            font-size: 20px;
+        }
+
+        .card_1l2 .aa mark{
+            box-sizing: border-box;
+            background-color: green;
+            padding-bottom: 2px;
+        }
+
+        .card_1l2 img{
+            width: 270px;
+        }
+
+        .card_1l1 p{
+            font-weight: 800;
+            font-size: medium;
+        }
+
+        .card_1l2:hover{
+            background-color: darkslategray;
+        }
+        
+        .card_1l1:hover{
+            background-color: darkslategray;
+        }
+
+        .card_2l1:hover{
+            background-color: darkslategray;
+        }
+
+        .card_2l2:hover{
+            background-color: darkslategray;
+        }
+
+        .card_2l2:hover{
+            color:rgb(255, 255, 255);
+        }
+
+        .card_1l2:hover{
+            color:rgb(255, 255, 255);
+        }
+
+        .card_1l1:hover{
+            color:rgb(255, 255, 255);
+        }
+
+        .card_2l1:hover{
+            color:rgb(255, 255, 255);
+        }
+
+        @media only screen and (max-width: 1366px) {
+            .border{
+                height: 450vh;
+            }
+            .content{
+                height: 440vh;
+            }
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="border">
+        <div class="content">
+            <div class="header">
+                <h1>Tout sur les dinosaures</h1>
+            </div>
+            <div class="Sommaire">
+                <h2>Sommaire</h2>
+                <ul>
+                    <li><a href="#1">Que sont les dinosaures?</a></li>
+                    <li><a href="#2">Les dinosaures au cours du temps</a>
+                        <ul>
+                            <li><a href="#">Les dinosaures au Trias</a></li>
+                            <li><a href="#">Les dinosaures du Jurassique</a></li>
+                            <li><a href="#">Les dinosaures du Crétacé</a></li>
+                            <li><a href="#">Les dinosaures du Paléogene</a></li>
+                            <li><a href="#">Les dinosaures au Néogène</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#3">Quelques dinosaures</a></li>
+                </ul>
+            </div>
+            <div class="last">
+                <p class="first_par"><span>Les dinosaures sont un groupe d'animaux, qui rassemble aujourd'hui tous les oiseaux. Mais autrefois, il a existé</span> beaucoup d'autres dinosaures, cousins des olseaux, qul pouvalent étre très diferents et qul ont aujourd'hul disparu. On les connait cependant grace a leurs fossiles Parmi ces dinosaures disparus, beaucoup ne ressemblalent à aucun autre animal connu sur terre Certains etaient enormes et c'est meme parmi les dinosaures que l'o trouve les plus grands animalulx terrestres de tous les temps Depuis tres longtenas, les dinosaures font rever les sclentifiques et les passionnes. qui decouvrent leurs fossiles et qui cherchent à savoir a quol ressemblalent ces animaux.</p>
+                <h2 id="1">Que sont les dinosaures ?</h2>
+                <p class="par2">
+                    En classification <mark><u>phylogénétique</u></mark>, les scientifiques définissent les dinosaures comme le groupe formé par l'ancotre commun du
+                    moineau et du tricératops et tous ses descendants. Pour simplifer, le moineau et le tricératops sont tous les deux des dinosaures, tres différents, tellement différents que leur ancôtre commun est aussl celul de tous les dinosaures. Ainsi, tout animal plus proche du tricératops et du moineau que de n'importe quel autre animal est un dinosaure.
+                    <br>
+                    Ainsi, le petit moineau, de l'ordre des saurischiens, est plus proche génétiquement-pluS «cousin»-du tyrannosaure que le crocodile, qui est effectivement aussi un archosaure, mais pas un dinosaurien.
+                </p>
+                <h2 id="2">Les dinosaures au cours du temps</h2>
+                <p class="par2">
+                    Les dinosaures sont apparus il y a environ 230 millons d'années, au Trias. Durant le Mésozoique, beaucoup de dinosaures ont disparu ot d'autres sont apparus, si bien qu'il on a oexlsté un grand nombre de sortes diférents, mals pas toujours en meme temps.
+                    <br>
+                    <br>
+                    C'est au cours du <span>Trias</span> , il y a 230 millons d'années, que les premiers dinosaures apparalissent. Les plus anclens dinosaures connus sont des théropodes, des potits dinosauros carnivores bipèdes, commo le coalophysis ou l'hérmérasaure ot des prosauropodes, des animaux beaucoup plus lourds, probablement herbivores, au cou allonge.
+                    <br>
+                    <br>
+                    ya 200 milllons d'années, le <span>Trias</span> est remplacó par le <span>Jurassique</span>. Durant cette période, qui va duror environ 55 mlllonsS dannees, les dinosaures vont se diversifier et de nouveaux groupes et de nombreuses especes, vont apparaitre. On connai egalement, a cee epoque, les premiers din0osaures véritablement géants, mais aussi des dinosaures plus petits en tres grand nombre.
+                    <br>
+                    <br>
+                    Le <span>Cretace</span> commence il ya 145 millions d'annees. Les dinosaures les plus celebres datent de cette epoque, comme le tyrannosaure, ou le tricératops. En falt, bon nombre de dinosaures du film Jurassic Park datent plutöt du <span>Cretace</span>.. Il existe oncore de très grands dinosaures au <span>Cretace</span>, mais aussi beaucouP de dinosaures plus petits. Parmi eux, des oiseaux étonnants font leur apparition, comme Tichthyornis, un olseau marin, tres bon nageur, mais incapable de voler... 
+                    <br>
+                    <br>
+                    Le <span>Paléogène</span> est la premlère période de l'ere tortialro, ou Conozoique. l commence a la fin du <span>Cretace</span>, 11 ya 65 millons d'annees et se termine il y a 23 millions d'annees. A la fin du <span>Cretace</span>, la plupart des dinosaures ont disparu, seuls les olseaux ont survecu. Parallelement, les mammiferes, qul existent depuis le <span>Trias</span>, c'est-a-dire dopuls aussi longtemps que los dinosaures, ont egalement survécu. Au debut du <span>Paléogène</span>, alors que beaucoup d'especes viennent de disparaitre, les olseaux et les mammiferes sont les especes les plus abondantes et elles vont rapidement evoluer pour coloniser la TerTe entiere. Des olseaux geants apparalssent, qul vont rapldement prendre la place de leurs cousins disparus, les grands dinosaures carnivores.
+                    <br>
+                    <br>
+                    Le <span>Néogene</span> est la période actuelle. Il commence il y a 23 millons d'années. Durant tout ce temps, de nombreux olseaux sont apparus et ont disparu. AUjourd'hul, on connait environ to 000 especes d'oiseaux, solt pres du double du nombre de mammifères difficile donc de dire que les dinosaures ont disparu existe une tres grande variete d'oiseaux, tres differents. Avec le tomps, ils se sont adaptés aux milieux les plus divers.
+                </p>
+                <h2 id="3">Quelques dinosaures</h2>
+                <div class="dinosaures">
+                    <div class="card_1l1">
+                        <h1><mark>ANKYLOSAURE</mark></h1>
+                        <img src="Screenshot 2022-10-26 115650.png">
+                        <p>
+                            Herbivore<br>Cretace
+                        </p>
+                    </div>
+                    <div class="card_2l1">
+                        <h1><mark>BRACHIOSAURE</mark></h1>
+                        <img src="Screenshot 2022-10-26 121911.png">
+                        <p>
+                            Herbivore<br>Jurassique
+                        </p>
+                    </div>
+                    <div class="card_1l1">
+                        <h1><mark>DIPLODOCUS</mark></h1>
+                        <img src="Screenshot 2022-10-26 121155.png">
+                        <p>
+                            Herbivore<br>Jurassique
+                        </p>
+                    </div>
+                    <div class="card_2l2">
+                        <h1 class="aa"><mark>IGUANODON</mark></h1>
+                        <img src="Screenshot 2022-10-26 122634.png">
+                        <p>
+                            Herbivore<br>Cretace
+                        </p>
+                    </div>
+                    <div class="card_1l2">
+                        <h1 class="aa"><mark>PARASAUROLOPHUS</mark></h1>
+                        <img src="Screenshot 2022-10-26 124403.png">
+                        <p>
+                            Herbivore<br>Cretace
+                        </p>
+                    </div>
+                    <div class="card_2l2">
+                        <h1 class="aa"><mark>STEGOSAURE</mark></h1>
+                        <img src="Screenshot 2022-10-26 124442.png">
+                        <p>
+                            Herbivore<br>Jurassique
+                        </p>
+                    </div>
+                    <div class="card_1l2">
+                        <h1 class="aa"><mark>TRICERATOPS</mark></h1>
+                        <img src="Screenshot 2022-10-26 124530.png">
+                        <p>
+                            Herbivore<br>Cretace
+                        </p>
+                    </div>
+                    <div class="card_2l2">
+                        <h1 class="ss"><mark>TYRANNOSAURE</mark></h1>
+                        <img src="Screenshot 2022-10-26 124922.png">
+                        <p>
+                            Carnivore<br>Cretace
+                        </p>
+                    </div>
+                    <div class="card_1l2">
+                        <h1 class="ss"><mark>VELOCIRAPTOR</mark></h1>
+                        <img src="Screenshot 2022-10-26 125036.png">
+                        <p>
+                            Carnivore<br>Cretace
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
